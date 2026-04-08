@@ -37,7 +37,8 @@ def separatingyears(giveth: list):
     for i in range(len(taketh)):
         with open(f"newmovies{i}.csv", "w", encoding='utf-8', newline='') as csvfile:
             collecting = csv.writer(csvfile)
-            collecting.writerow(title)
+            if i != 0:
+                collecting.writerow(title)
             for j in range(len(taketh[i])):
                 collecting.writerow(taketh[i][j])
 
