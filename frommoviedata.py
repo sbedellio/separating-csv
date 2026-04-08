@@ -45,3 +45,7 @@ def separatingyears(giveth: list):
     return taketh
 
 separatingyears(datainarray)
+
+end = time.time()
+
+print(f"Program took {end-start} seconds.")
